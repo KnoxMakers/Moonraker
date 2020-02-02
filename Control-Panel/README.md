@@ -10,7 +10,7 @@ The mounting bracket connects using a M3 screw into a heatset nut in the walls.
 
 Labels created with generic label maker.
 
-The [Indicator LEDs](https://www.amazon.com/RadioShack-12V-20mA-4mm-Holder/dp/B000TLUSZ2)
+[Indicator LEDs](https://www.amazon.com/RadioShack-12V-20mA-4mm-Holder/dp/B000TLUSZ2)
 
 [Fire Button](https://www.amazon.com/Adafruit-Accessories-Illuminated-Momentary-Pushbutton/dp/B00SK8MHA0)
 
