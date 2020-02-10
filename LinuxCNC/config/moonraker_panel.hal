@@ -1,0 +1,26 @@
+loadrt not
+addf not.0 servo-thread
+
+loadrt time
+addf time.0 servo-thread
+
+sets spindle-at-speed true
+
+##
+net prog-running not.0.in <= halui.program.is-idle
+net cycle-timer time.0.start <= not.0.out
+net cycle-seconds pyvcp.time-seconds <= time.0.seconds
+net cycle-minutes pyvcp.time-minutes <= time.0.minutes
+net cycle-hours pyvcp.time-hours <= time.0.hours
+
+
+net bbox halui.mdi-command-00 <= pyvcp.bbox-btn
+net toff halui.mdi-command-01 <= pyvcp.toff-btn
+
+
+setp halui.jog-speed 200
+net bedup halui.jog.6.plus <= pyvcp.bedup-btn
+net beddown halui.jog.6.minus <= pyvcp.beddown-btn
+#net uprobe halui.mdi-command-02 <= pyvcp.uprobe-btn
+net laser-power-cmd <= motion.analog-out-00 => pwmgen.0.value => pyvcp.powah-dial #LASER
+ 
