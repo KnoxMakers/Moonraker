@@ -1,6 +1,6 @@
 #  GUI
 
-![Axis Interface](LinuxCNC/moonraker-gui.png)
+![Axis Interface](moonraker-gui.png)
 
 ---
 
