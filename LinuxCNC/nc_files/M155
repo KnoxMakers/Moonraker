@@ -1,4 +1,4 @@
 #!/bin/sh
 axis-remote -m  G10L20P1X0Y0
-axis-remote --reload
+axis-remote --reload &
 
